@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+server=$1
+branch=$2
+
+echo "------------------------------------"
+echo "  INSTALL on $server"
+echo "------------------------------------"
+
+ssh -t $server < bin/install.sh
